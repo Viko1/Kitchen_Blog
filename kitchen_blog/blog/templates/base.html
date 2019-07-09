@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Kithen Blog</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
 </head>
 <body>
-    {% block content %}
-        <h1> Hi its my new Blog</h1>
-    {% endblock %}
+    <header class="site_header">
+        <div class="site_brand">
+            <h1>Kitchen Blog</h1>
+        </div>
+    </header>
+
+
+    <div class="content_wrapper">
+        <div class="content">
+            {% block content %}
+                <h1>Welcome to Home of Kitchen Blog</h1>
+            {% endblock %}
+        </div>
+
+        <div class="slidebar">
+            <div class="widget">
+                <h1 class="widget_title">Slidebar Title</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
