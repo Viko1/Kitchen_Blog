@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="post_details">
+        <div class="post_info">
+
+            <h1>{{ post.title }}</h1>
+            <div class="post_detail_meta">
+                <p>Author: {{ post.author }} | <a href="#"> + Edit Post </a> | <a href="#">Remove</a> </p>
+            </div>
+        </div>
+
+        <div class="post_detail_content">
+            {{ post.body }}
+        </div>
+
+
+        <div class="post_image">
+            <img src="/{{post.image.url }}" >
+        </div>
+    </div>
+
+{% endblock %}

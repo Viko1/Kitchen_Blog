@@ -6,7 +6,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
-    image = models.ImageField(upload_to='blog/static/media/blog_images')
+    image = models.ImageField(upload_to='blog_images')
 
     def __str__(self):
         return self.title
