@@ -8,6 +8,7 @@
     color: #d3ffe0;
     padding: 1rem;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .site_brand{
@@ -119,6 +120,12 @@
 .new_post button:hover{
     background: darkblue;
 }
+
+a,a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 .sidebar{
     background: #ddd;
