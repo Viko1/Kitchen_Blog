@@ -6,7 +6,7 @@
 
             <h1>{{ post.title }}</h1>
             <div class="post_detail_meta">
-                <p>Author: {{ post.author }} | <a href="#"> + Edit Post </a> | <a href="#">Remove</a> </p>
+                <p>Author: {{ post.author }} | <a href="{% url 'post-edit' post.pk %}"> + Edit Post </a> | <a href="{% url 'post-delete' post.pk %}">Remove</a> </p>
             </div>
         </div>
 
