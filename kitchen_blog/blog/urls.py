@@ -11,6 +11,6 @@ urlpatterns = [
     path('article/new/',CreatePostView.as_view(),name="post-new"),
     path('article/edit/<int:pk>/',PostEditView.as_view(),name="post-edit"),
     path('article/<int:pk>/remove',PostDeleteView.as_view(),name="post-delete"),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()
