@@ -5,21 +5,25 @@
     <title>Kitchen Blog</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="site_header">
-        <div class="site_brand">
-            <h1 style="float:left"><a href="{% url 'home' %}">Kitchen Blog</a></h1>
-            <h2 style="float:right">
-                {% if user.is_authenticated %}
-                    <a href="{% url 'post-new' %}"> + New Post </a> | <a href="{% url 'logout' %}"> Logout </a>
-                {% else %}
-                    <a href="{% url 'login' %}"> Login </a> |
-                    <a href="{% url 'register' %}">Register</a>
-                {% endif %}
-            </h2>
-        </div>
-    </header>
+    {% include 'navbar.html' %}
+{#    <header class="site_header">#}
+{#        <div class="site_brand">#}
+{#            <h1 style="float:left"><a href="{% url 'home' %}">Kitchen Blog</a></h1>#}
+{#            <h2 style="float:right">#}
+{#                {% if user.is_authenticated %}#}
+{#                    <a href="{% url 'post-new' %}"> + New Post </a> | <a href="{% url 'logout' %}"> Logout </a>#}
+{#                {% else %}#}
+{#                    <a href="{% url 'login' %}"> Login </a> |#}
+{#                    <a href="{% url 'register' %}">Register</a>#}
+{#                {% endif %}#}
+{#            </h2>#}
+{#        </div>#}
+{#    </header>#}
 
 
     <div class="content_wrapper">
@@ -29,11 +33,10 @@
             {% endblock %}
         </div>
 
-        <div class="slidebar">
-            <div class="widget">
-                <h1 class="widget_title">Slidebar Title</h1>
-            </div>
-        </div>
+
     </div>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'bootstrap/bootstrap.js' %}"></script>
 </body>
 </html>
