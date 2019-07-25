@@ -254,3 +254,32 @@ nav ul li a {
 
 }
 
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+    font-size: 48px;
+}
+
+.h6, h6 {
+    font-size: 22px;
+    text-align: center;
+}

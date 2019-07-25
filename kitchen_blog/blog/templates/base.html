@@ -11,19 +11,6 @@
 </head>
 <body>
     {% include 'navbar.html' %}
-{#    <header class="site_header">#}
-{#        <div class="site_brand">#}
-{#            <h1 style="float:left"><a href="{% url 'home' %}">Kitchen Blog</a></h1>#}
-{#            <h2 style="float:right">#}
-{#                {% if user.is_authenticated %}#}
-{#                    <a href="{% url 'post-new' %}"> + New Post </a> | <a href="{% url 'logout' %}"> Logout </a>#}
-{#                {% else %}#}
-{#                    <a href="{% url 'login' %}"> Login </a> |#}
-{#                    <a href="{% url 'register' %}">Register</a>#}
-{#                {% endif %}#}
-{#            </h2>#}
-{#        </div>#}
-{#    </header>#}
 
 
     <div class="content_wrapper">
@@ -35,6 +22,9 @@
 
 
     </div>
+
+
+    {% include 'footer.html' %}
 
     <script src="{% static 'js/scripts.js' %}"></script>
     <script src="{% static 'bootstrap/bootstrap.js' %}"></script>
