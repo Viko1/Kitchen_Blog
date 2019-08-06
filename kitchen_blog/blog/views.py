@@ -3,6 +3,7 @@ from django.views.generic import ListView,DetailView,CreateView,UpdateView,Delet
 from .models import Post
 from django.urls import reverse_lazy
 
+
 # Create your views here.
 
 # def indexView(request):
@@ -11,6 +12,8 @@ from django.urls import reverse_lazy
 class IndexView(ListView):
     model = Post
     template_name = 'index.html'
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    paginate_by = 4
 
 class PostDetailView(DetailView):
     model = Post
