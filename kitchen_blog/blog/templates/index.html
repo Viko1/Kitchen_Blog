@@ -20,8 +20,8 @@
                                 <a href="{% url 'post-detail' post.pk %}" class="btn btn-primary">Read More →</a>
                             </div>
                             <div class="card-footer text-muted">
-                                Posted on January 1, 2017 by
-                                <a href="#">Start Bootstrap</a>
+                                Added {{ post.created_on}} by {{ post.author }}
+                                <a href="#"></a>
                             </div>
                         <!-- Blog Post -->
                         </div>

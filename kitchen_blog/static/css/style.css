@@ -69,9 +69,9 @@ img {
 }
 
 .post_details{
-    font-family: sans-serif;
-    background: #f3eeeecf;
-    padding: 1rem;
+    font-family: Georgia;
+    background: #0062cc05;
+    padding: 15rem;
 }
 
 .post_detail_meta{
@@ -310,3 +310,16 @@ nav ul li a {
     margin-bottom: 1.5rem!important;
 }
 
+.post_image{
+
+}
+
+.text_center{
+    border: 2px double #1C6EA4;
+    text-align: center;
+    color: #7c5fff;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 100px;
+
+
+}
