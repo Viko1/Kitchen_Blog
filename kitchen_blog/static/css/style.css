@@ -314,12 +314,31 @@ nav ul li a {
 
 }
 
-.text_center{
-    border: 2px double #1C6EA4;
+/*.text_center{*/
+    /*position: relative;*/
+    /*border: 2px double #1C6EA4;*/
+    /*text-align: center;*/
+    /*color: #7c5fff;*/
+    /*font-family: 'Bungee Inline', cursive;*/
+    /*font-size: 100px;*/
+
+
+/*}*/
+
+.text_center {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    font-family: 'Zhi Mang Xing', cursive;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
     text-align: center;
-    color: #7c5fff;
-    font-family: 'Bungee Inline', cursive;
-    font-size: 100px;
-
-
+    font-size: 40px;
 }
+

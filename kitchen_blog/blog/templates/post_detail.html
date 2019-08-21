@@ -2,26 +2,30 @@
 {% block content %}
 
     <style>
-    header {
+     header{
         width: 100%;
         height: 68vh;
         background:  url("/{{post.image.url }}") ;
-
+        {#filter: blur(8px);#}
+        {#-webkit-filter: blur(8px);#}
         background-size: cover;
-
-
-
+        position: relative;
     }
+     .content {
+        width: 94%;
+        margin: -4em auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+        }
 
     </style>
 
-{#    <div class="post_image">#}
-{#            <img src="/{{post.image.url }}"  class="img-responsive" >#}
-{#        </div>#}
     <div class="text_center">
         <p3>{{ post.title }}</p3>
-
     </div>
+
+
     <div class="post_details">
         <div class="post_info">
 
