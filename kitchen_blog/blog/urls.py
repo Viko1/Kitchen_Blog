@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from kitchen_blog import settings
 
+
+
 urlpatterns = [
     path('',IndexView.as_view(), name='home'),
     path('article/<int:pk>/',PostDetailView.as_view(),name="post-detail"),
