@@ -6,16 +6,20 @@ from django.urls import reverse
 
 #Category
 class Category(models.Model):
-    name = models.CharField (max_length=240, blank=True, null=True, default='Category')
-    slug = models.SlugField (max_length=240, unique=True)
+
+    name = models.CharField(max_length=240, blank=True, null=True, default='Category')
+    slug = models.SlugField(max_length=240, unique=True)
 
     class Meta:
-        ordering = ('name', )
-        verbose_name = 'Category'
-        verbose_name_plural = 'Categories'
+        ordering = ['-name']
 
-    def __set__(self):
+    def __str__(self):
         return self.name
+
+
+
+
+
 
 STATUS = (
     (0,"Draft"),
@@ -41,7 +45,7 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('post-detail')
+        return reverse('home')
 
     class Meta:
         ordering = ['-created_on']
