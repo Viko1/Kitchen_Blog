@@ -34,7 +34,9 @@ class Post(models.Model):
 
     title = models.CharField(max_length=255, blank=True, null=True, default='Post')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    ingredients = models.TextField(default='ingredients')
     body = models.TextField()
+    post_image = models.ImageField(upload_to='blog_images', default='post_image')
     image = models.ImageField(upload_to='blog_images')
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)

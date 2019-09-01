@@ -35,9 +35,21 @@
             </div>
         </div>
 
-        <div class="post_detail_content">
+        <li>
+            {{ post.ingredients }}
+        </li>
+
+        <p1>
+                <img class="post_image_image" src="/{{ post.post_image.url }}" class="img-responsive"  width="400" height="400" >
+        </p1>
+
+
+        <p2>
+            <div class="post_detail_content">
             {{ post.body }}
-        </div>
+            </div>
+        </p2>
+
         <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
 
