@@ -70,6 +70,16 @@ img {
     font-size: 17px;
 }
 
+.list-group-items {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: 21px;
+    background-color: #fafcfe;
+    border: 1px solid rgb(0, 0, 0);
+    white-space: pre-line;
+}
+
 .post_details{
     font-family: Georgia;
     background: #0062cc05;
@@ -351,3 +361,8 @@ nav ul li a {
     justify-content: center;
     padding-left: 240px;
 }
+
+.ingredients_content{
+    text-align: right;
+}
+
