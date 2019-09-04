@@ -13,7 +13,7 @@
 
                     {% for post in object_list %}
                         <div class="card mb-4">
-                            <img class="card-img-top" src="/{{post.image.url }}" class="img-responsive"  width="750" height="400" >
+                            <img class="card-img-top" src="/{{post.image.url }}" class="img-responsive"  width="750" height="570" >
                             <div class="card-body">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card=text">{{ post.body|truncatechars_html:210 }}</p>
