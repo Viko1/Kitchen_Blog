@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
-
 {% block content %}
 
-
-
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h1 class="my-4">Welcome to M'Kitchen Blog
+                <h1 class="my-4">{{ category.name }}
 {#                    <small>Secondary Text</small>#}
                 </h1>
 
@@ -20,7 +17,9 @@
                                 <a href="{% url 'post-detail' post.pk %}" class="btn btn-primary">Read More →</a>
                             </div>
                             <div class="card-footer text-muted">
-                                Added {{ post.created_on}} by {{ post.author }} , category: <a href="{% url 'list-by-category' post.category.pk %}">{{ post.category }}</a>
+                                Added {{ post.created_on}} by {{ post.author }} , category: {{ category.name }}">
+                                {{ post.category}}
+                            </a>
                                 <a href="#"></a>
                             </div>
                         <!-- Blog Post -->
@@ -104,12 +103,8 @@
                   </div>
                 </div>
 
-            </div>
-        </div>
-    </div>
 
 
 
 
 {% endblock %}
-
