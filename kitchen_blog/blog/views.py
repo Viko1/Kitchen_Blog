@@ -5,15 +5,21 @@ from django.urls import reverse_lazy
 
 
 
-# Create your views here.
 
-# def indexView(request):
-#     return render(request, 'base.html')
+def  categories_list_view(request):
+    queryset = Category.objects.all()
+    context = {
+        "object_list": queryset
+    }
 
+    return render(request, "index.html", context)
 
 class PostCategory(ListView):
     model = Post
     template_name = 'list_by_category.html'
+
+
+
     def get_queryset(self):
         self.category = get_object_or_404(Category, pk=self.kwargs['pk'])
         return Post.objects.filter(category=self.category)
@@ -22,6 +28,9 @@ class PostCategory(ListView):
         context = super(PostCategory, self).get_context_data(**kwargs)
         context['category'] = self.category
         return context
+
+
+
 
 class IndexView(ListView):
 
