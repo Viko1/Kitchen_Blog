@@ -4,12 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/kitchen_blog/blog/views.py" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f1acae-ff7e-4a6f-8300-cf7f9346b5dd" name="Default" comment="Kitchen blog v1.9 category page">
+    <list default="true" id="26f1acae-ff7e-4a6f-8300-cf7f9346b5dd" name="Default" comment="Kitchen blog v1.91 category page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen_blog/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen_blog/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kitchen_blog/blog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen_blog/blog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kitchen_blog/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen_blog/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen_blog/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen_blog/static/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="884">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -75,11 +65,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="306">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitchen_blog/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="368" column="1" lean-forward="true" selection-start-line="368" selection-start-column="1" selection-end-line="368" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -96,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="72" selection-end-column="42" />
+            <state relative-caret-position="1241">
+              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -105,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="646">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -146,12 +154,12 @@
         <option value="$PROJECT_DIR$/kitchen_blog/blog/templates/base.html" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/admin.py" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/templates/edit_post.html" />
-        <option value="$PROJECT_DIR$/kitchen_blog/static/css/style.css" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/templates/post_detail.html" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/urls.py" />
+        <option value="$PROJECT_DIR$/kitchen_blog/blog/models.py" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/views.py" />
-        <option value="$PROJECT_DIR$/kitchen_blog/blog/models.py" />
+        <option value="$PROJECT_DIR$/kitchen_blog/static/css/style.css" />
         <option value="$PROJECT_DIR$/kitchen_blog/blog/templates/index.html" />
       </list>
     </option>
@@ -337,7 +345,9 @@
       <workItem from="1567972278570" duration="4246000" />
       <workItem from="1568061625411" duration="3012000" />
       <workItem from="1568147156257" duration="215000" />
-      <workItem from="1568147738632" duration="2261000" />
+      <workItem from="1568147738632" duration="2283000" />
+      <workItem from="1568150037838" duration="14000" />
+      <workItem from="1568231532628" duration="4507000" />
     </task>
     <task id="LOCAL-00001" summary="Kitchen blog v0.1">
       <created>1562706037462</created>
@@ -479,16 +489,24 @@
       <option name="project" value="LOCAL" />
       <updated>1568064636526</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Kitchen blog v1.91 category page">
+      <created>1568150017745</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1568150017745</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137532000" />
+    <option name="totallyTimeSpent" value="142075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.1705757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.25799572" />
       <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -500,7 +518,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.219935" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.219935" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
@@ -558,7 +576,8 @@
     <MESSAGE value="Kitchen blog v1.70 page detailing ingredients" />
     <MESSAGE value="Kitchen blog v1.8 page detailing finish" />
     <MESSAGE value="Kitchen blog v1.9 category page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kitchen blog v1.9 category page" />
+    <MESSAGE value="Kitchen blog v1.91 category page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kitchen blog v1.91 category page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -711,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen_blog/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" selection-start-line="96" selection-start-column="1" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/edit_post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -750,15 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="646">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="72" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -766,26 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,10 +784,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/list_by_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen_blog/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="368" column="1" lean-forward="true" selection-start-line="368" selection-start-column="1" selection-end-line="368" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kitchen_blog/blog/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+        <state relative-caret-position="442">
+          <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
         </state>
       </provider>
     </entry>

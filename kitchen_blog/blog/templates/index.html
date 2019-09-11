@@ -60,9 +60,7 @@
                     </div>
                   </div>
                 </div>
-                              {% for category in object_list %}
-                                  <li>{{ category.name }}</li>
-                              {% endfor %}
+
                 <!-- Categories Widget -->
                 <div class="card my-4">
                   <h5 class="card-header">Categories</h5>
@@ -70,9 +68,13 @@
                     <div class="row">
                       <div class="col-lg-6">
                         <ul class="list-unstyled mb-0">
-                          <li>
-                              {{ category.categories.all }}
-                          </li>
+                            <li>
+                                {% for post in object_list %}
+                                    <div>
+                                    <a class="menu-link" href="{% url 'list-by-category' post.category.pk %}">{{ post.category }}</a>
+                                    </div>
+                                {% endfor %}
+                            </li>
                         </ul>
                       </div>
                     </div>

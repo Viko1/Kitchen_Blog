@@ -6,13 +6,7 @@ from django.urls import reverse_lazy
 
 
 
-def  categories_list_view(request):
-    queryset = Category.objects.all()
-    context = {
-        "object_list": queryset
-    }
 
-    return render(request, "index.html", context)
 
 class PostCategory(ListView):
     model = Post
