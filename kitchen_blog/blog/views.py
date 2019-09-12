@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 class PostCategory(ListView):
     model = Post
     template_name = 'list_by_category.html'
-
+    query_Set = Category.objects.all()
 
 
     def get_queryset(self):

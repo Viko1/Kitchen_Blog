@@ -29,12 +29,12 @@
 
                 {% if is_paginated %}
                     <nav aria-label="Page navigation conatiner "></nav>
-                    <ul class="pagination justify-content-center my-4">
+                    <ul class="pagination justify-content-center my-8">
                         {% if page_obj.has_previous %}
-                        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Prev </a></li>
                         {% endif %}
                         {% if page_obj.has_next %}
-                        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Next &raquo;</a></li>
 
                         {% endif %}
                     </ul>
@@ -74,6 +74,14 @@
                                     <a class="menu-link" href="{% url 'list-by-category' post.category.pk %}">{{ post.category }}</a>
                                     </div>
                                 {% endfor %}
+
+                                {% for post in category.post_set.all %}
+                                    {{ post.category }}
+                                {% endfor %}
+
+
+
+
                             </li>
                         </ul>
                       </div>

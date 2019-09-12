@@ -10,6 +10,7 @@ class Category(models.Model):
     name = models.CharField(max_length=240, blank=True, null=True, default='Category')
     slug = models.SlugField(max_length=240, unique=True)
 
+
     class Meta:
         ordering = ['-name']
 
