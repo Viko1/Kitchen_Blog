@@ -29,7 +29,7 @@
 
                 {% if is_paginated %}
                     <nav aria-label="Page navigation conatiner "></nav>
-                    <ul class="pagination justify-content-center my-8">
+                    <ul class="pagination justify-content-center my-2">
                         {% if page_obj.has_previous %}
                         <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Prev </a></li>
                         {% endif %}
