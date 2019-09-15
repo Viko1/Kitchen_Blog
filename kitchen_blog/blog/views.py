@@ -14,6 +14,7 @@ class PostCategory(ListView):
     query_Set = Category.objects.all()
 
 
+
     def get_queryset(self):
         self.category = get_object_or_404(Category, pk=self.kwargs['pk'])
         return Post.objects.filter(category=self.category)
@@ -26,13 +27,19 @@ class PostCategory(ListView):
 
 
 
+
+
 class IndexView(ListView):
 
     model = Post
     template_name = 'index.html'
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    paginate_by = 4
+    paginate_by = 8
     # query = request.GET.get
+
+
+
+
 
 class PostDetailView(DetailView):
     model = Post
