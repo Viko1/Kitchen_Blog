@@ -2,10 +2,41 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView,DetailView,CreateView,UpdateView,DeleteView
 from .models import Post, Category
 from django.urls import reverse_lazy
+from django.db.models import Q
 
 
+def search(request):
+    queryset = Post.objects.all()
 
+    query = request.GET.get('q')
 
+    if query:
+        queryset = queryset.filter(
+            # get the post with the title or content
+            # contains the search input
+            Q(title__icontains=query) |
+            Q(body__icontains=query) |
+            Q(category__icontains=query) |
+            Q(ingredients__icontains=query)
+            # remove duplicates
+        ).distinct()
+
+    context = {
+        'queryset': queryset
+    }
+    return render(request, 'search_results.html', context)
+
+# class SearchResultsView(ListView):
+#     model = Post
+#     template_name = 'search_results.html'
+#
+#
+#     def get_queryset(self):  # new
+#         query = self.request.GET.get('q')
+#         object_list = Post.objects.filter(
+#             Q(title__icontains=query) | Q(category__icontains=query) | Q(author__icontains=query)
+#         )
+#         return object_list
 
 
 class PostCategory(ListView):
