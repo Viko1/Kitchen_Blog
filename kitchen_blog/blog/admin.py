@@ -4,13 +4,13 @@ from .models import Post, Category
 # Register your models here.
 
 
-# class PostAdmin(admin.ModelAdmin):
-#     list_display = ('title', 'author', 'ingredients', 'body', 'post_image', 'category')
-#     prepopulated_fields = {'title': ('author', 'ingredients', 'body', )}
-#     search_fields = ['title__field', 'category__field1', 'body__field1']
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'ingredients', 'body', 'post_image', 'category')
+    prepopulated_fields = {'title': ('author', 'ingredients', 'body', )}
+    search_fields = ['title', 'category__name', 'body', 'ingredients']
 
 
-admin.site.register(Post)
+admin.site.register(Post, PostAdmin)
 
 
 class CategoryAdmin(admin.ModelAdmin):

@@ -12,31 +12,18 @@ def search(request):
 
     if query:
         queryset = queryset.filter(
-            # get the post with the title or content
-            # contains the search input
-            Q(title__icontains=query) |
+
+            Q(category__name__icontains=query) |
+            Q(author__username__icontains=query) |
             Q(body__icontains=query) |
-            Q(category__icontains=query) |
-            Q(ingredients__icontains=query)
-            # remove duplicates
+            Q(title__icontains=query)
+
         ).distinct()
 
     context = {
         'queryset': queryset
     }
     return render(request, 'search_results.html', context)
-
-# class SearchResultsView(ListView):
-#     model = Post
-#     template_name = 'search_results.html'
-#
-#
-#     def get_queryset(self):  # new
-#         query = self.request.GET.get('q')
-#         object_list = Post.objects.filter(
-#             Q(title__icontains=query) | Q(category__icontains=query) | Q(author__icontains=query)
-#         )
-#         return object_list
 
 
 class PostCategory(ListView):
@@ -56,10 +43,6 @@ class PostCategory(ListView):
         return context
 
 
-
-
-
-
 class IndexView(ListView):
 
     model = Post
@@ -67,10 +50,6 @@ class IndexView(ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     paginate_by = 8
     # query = request.GET.get
-
-
-
-
 
 class PostDetailView(DetailView):
     model = Post

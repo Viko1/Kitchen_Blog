@@ -21,19 +21,10 @@ class Category(models.Model):
         return reverse('list_by_category', args=[self.name])
 
 
-
-
-
-
-
-
 STATUS = (
     (0,"Draft"),
     (1,"Publish")
 )
-
-
-
 
 #Post
 class Post(models.Model):
