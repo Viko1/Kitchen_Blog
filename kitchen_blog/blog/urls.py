@@ -15,7 +15,8 @@ urlpatterns = [
     path('article/edit/<int:pk>/', PostEditView.as_view(),name="post-edit"),
     path('article/<int:pk>/remove', PostDeleteView.as_view(),name="post-delete"),
     path('article/categories/<int:pk>', PostCategory.as_view(), name="list-by-category"),
-    path('article/search/', search, name='search')
+    path('article/search/', search, name='search'),
+    path('article/api-auth/', include('rest_framework.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
